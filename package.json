@@ -1,0 +1,22 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "back-end for the project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "bin": {
+    "saf-workflow": "./workflow-cli.ts"
+  },
+  "author": "your name",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^14.0.0",
+    "saflib-workflows": "file:saf-workflows"
+  },
+  "workspaces": [
+    "package/*"
+  ]
+}
