@@ -2,10 +2,10 @@
 
 import metaWorkflows from "saflib-workflows/workflows";
 import { runWorkflowCli } from "saflib-workflows";
-// import { TestWorkflowDefinition } from "./workflows/test.ts";
+import { TestWorkflowDefinition } from "./workflows/test.ts";
 
 runWorkflowCli([
   // workflows/add-workflow HOOK - do not remove this line
   ...metaWorkflows,
-  // TestWorkflowDefinition,
+  TestWorkflowDefinition,
 ]);
