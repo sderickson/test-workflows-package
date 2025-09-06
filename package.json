@@ -13,8 +13,7 @@
   "author": "your name",
   "license": "ISC",
   "dependencies": {
-    "commander": "^14.0.0",
-    "saflib-workflows": "file:saf-workflows"
+    "saflib-workflows": "file:./package"
   },
   "workspaces": [
     "package/*"
