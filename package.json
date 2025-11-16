@@ -12,13 +12,11 @@
   },
   "author": "your name",
   "license": "ISC",
-  "dependencies": {
-    "saflib-workflows": "^0.2.1"
-  },
   "workspaces": [
     "package/*"
   ],
   "devDependencies": {
+    "saflib-workflows": "^0.2.2",
     "@types/node": "^24.3.1"
   }
 }
