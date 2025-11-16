@@ -2,7 +2,6 @@ import {
   CopyStepMachine,
   UpdateStepMachine,
   PromptStepMachine,
-  TestStepMachine,
   defineWorkflow,
   step,
 } from "saflib-workflows";
@@ -85,12 +84,10 @@ export const TestWorkflowDefinition = defineWorkflow<
       promptMessage: `Please update **${path.basename(context.copiedFiles!.test)}** to test the functionality you implemented. Make sure to mock any external dependencies.`,
     })),
 
-    step(TestStepMachine, () => ({
-      fileId: "test",
-    })),
-
     step(PromptStepMachine, ({ context }) => ({
       promptText: `Please verify that the ${context.name} workflow is working correctly. Test the functionality manually and ensure all files are properly configured.`,
     })),
   ],
 });
+
+export default TestWorkflowDefinition;
